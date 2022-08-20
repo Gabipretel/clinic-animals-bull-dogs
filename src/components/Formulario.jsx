@@ -7,6 +7,8 @@ function Formulario() {
     const [email, setEmail] = useState('');
     const [alta, setAlta] = useState('');
     const [sintomas, setSintomas] = useState('');
+    const [error, setError] = useState(false);
+    
 
     const handleSubmit = (e)=>{
         e.preventDefault();
@@ -74,7 +76,7 @@ function Formulario() {
             </div>
 
             <div className='mb-5'>
-                <label htmlFor='sintomas' className='block text-gray-700 uppercase font-bold'>Síntomas</label>
+                <label htmlFor='sintomas' className='block text-gray-700 uppercase font-bold '>Síntomas</label>
                 <textarea 
                 id='sintomas' 
                 className='border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md' 
