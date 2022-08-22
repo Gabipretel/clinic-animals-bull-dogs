@@ -7,5 +7,4 @@ function Error({mensaje}) {
     </div>
   )
 }
-
 export default Error
