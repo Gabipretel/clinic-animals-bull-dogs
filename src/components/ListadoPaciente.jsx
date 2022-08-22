@@ -1,7 +1,7 @@
 import React from 'react'
 import Paciente from './Paciente'
 
-function ListadoPaciente({pacientes}) {
+function ListadoPaciente({pacientes,setPaciente}) {
  
   return (
     //Verificacion de si hay o no un {} paciente y renderizado condicional.
@@ -17,6 +17,7 @@ function ListadoPaciente({pacientes}) {
           <Paciente 
             key={paciente.id}
             paciente={paciente}
+            setPaciente={setPaciente}
           />
           )}
   </>
