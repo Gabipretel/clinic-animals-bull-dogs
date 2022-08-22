@@ -7,7 +7,7 @@ function Paciente({paciente}) {
         <p className='font-bold mb-3 text-gray-700 uppercase'>Nombre:{' '}
             <span className='font-normal normal-case'>{nombre}</span>
         </p>
-        
+
         <p className='font-bold mb-3 text-gray-700 uppercase'>Propietario:{' '}
             <span className='font-normal normal-case'>{propietario}</span>
         </p>
@@ -23,7 +23,9 @@ function Paciente({paciente}) {
         <p className='font-bold mb-3 text-gray-700 uppercase'>Síntomas:{' '}
             <span className='font-normal normal-case'>{sintomas}</span>
         </p>
-
+        <div>
+            
+        </div>
       </div>
   )
 }

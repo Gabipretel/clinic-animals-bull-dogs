@@ -10,7 +10,13 @@ function Formulario({pacientes,setPacientes}) {
     const [sintomas, setSintomas] = useState('');
     const [error, setError] = useState(false);
 
-    
+    // funcion para AgregarID al objPacinete//
+    const generarId = ()=>{
+        const random= Math.random().toString(36).substr(2);
+        const fecha= Date.now().toString(36);
+        return random + fecha
+    }
+
     const handleSubmit = (e)=>{
         e.preventDefault();
         //Validación del formulario
@@ -24,7 +30,8 @@ function Formulario({pacientes,setPacientes}) {
             propietario,
             email,
             alta,
-            sintomas
+            sintomas,
+            id: generarId()
         }
         //Copia del Estado y agrego pacientes en forma de obj
         setPacientes([...pacientes, objPaciente]);
