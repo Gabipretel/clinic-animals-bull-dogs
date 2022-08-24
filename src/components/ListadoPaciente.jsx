@@ -1,8 +1,8 @@
 import React from 'react'
 import Paciente from './Paciente'
 
-function ListadoPaciente({pacientes,setPaciente}) {
- 
+function ListadoPaciente({pacientes,setPaciente, eliminarPaciente}) {
+
   return (
     //Verificacion de si hay o no un {} paciente y renderizado condicional.
     <div className='md:w-1/2 lg:w-3/5 h-screen overflow-y-scroll'>
@@ -18,6 +18,7 @@ function ListadoPaciente({pacientes,setPaciente}) {
             key={paciente.id}
             paciente={paciente}
             setPaciente={setPaciente}
+            eliminarPaciente={eliminarPaciente}
           />
           )}
   </>
